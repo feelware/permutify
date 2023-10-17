@@ -1,0 +1,33 @@
+.playlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-content {
+    border-radius: 15px 15px 0px 0px;
+    background: linear-gradient(180deg, #000 0%, #002D85 100%);
+    padding: 40px 35px;
+}
+
+.playlist-footer {
+    background-color: black;
+    border-radius: 0px 0px 15px 15px;
+    padding: 35px 35px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.playlist-title {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -0.25rem;
+}
+
+.playlist-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+}

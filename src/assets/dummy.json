@@ -1,0 +1,173 @@
+[
+    [
+        {
+            "name": "Wild Wild West",
+            "album": "By the Time I Get to Phoenix",
+            "artists": [
+                "Injury Reserve"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d000048510f3729d5667b0367516fa3ab"
+        },
+        {
+            "name": "the BLACK seminole.",
+            "album": "Let’s Start Here.",
+            "artists": [
+                "Lil Yachty"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d000048516f578b21bce56056473da7e6"
+        },
+        {
+            "name": "STEECEY",
+            "album": "Trash",
+            "artists": [
+                "COPYCATT"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d000048510bc8293c8f5f64b20cdcbc4b"
+        },
+        {
+            "name": "Peanut",
+            "album": "Some Rap Songs",
+            "artists": [
+                "Earl Sweatshirt"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d000048512b688ab63b1a5f281cfdf451"
+        }
+    ],
+    [
+        {
+            "name": "Loom — piano reworks",
+            "album": "some kind of peace — piano reworks",
+            "artists": [
+                "Eydís Evensen",
+                "Ólafur Arnalds"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d000048516d936266ea0bafe8ef16c692"
+        },
+        {
+            "name": "Forget It (feat. Oliver Tree)",
+            "album": "Radical Dude!",
+            "artists": [
+                "Getter",
+                "Oliver Tree"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d00004851f17c9105d82dd5bedbece7c6"
+        },
+        {
+            "name": "Project Cybersyn",
+            "album": "Family Portrait",
+            "artists": [
+                "Ross from Friends"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d00004851e5ede01d67d1b1d36359187a"
+        }
+    ],
+    [
+        {
+            "name": "Worldwide Steppers",
+            "album": "Mr. Morale & The Big Steppers",
+            "artists": [
+                "Kendrick Lamar"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d000048512e02117d76426a08ac7c174f"
+        },
+        {
+            "name": "Counting Sheep (V2) [2018 Export Wav] feat. Injury Reserve",
+            "album": "Things Don't Always Go The Way You Plan",
+            "artists": [
+                "Flume",
+                "Injury Reserve"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d0000485102628e62ad0886bec321bd51"
+        },
+        {
+            "name": "Lose It",
+            "album": "Skin",
+            "artists": [
+                "Flume",
+                "VIC MENSA"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d0000485156f4dd4f29ddc5f65c70b664"
+        }
+    ],
+    [
+        {
+            "name": "Captain Stupido",
+            "album": "Drunk",
+            "artists": [
+                "Thundercat"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d0000485185c5e6c686ced3e43bae2748"
+        },
+        {
+            "name": "Complexion (A Zulu Love)",
+            "album": "To Pimp A Butterfly",
+            "artists": [
+                "Kendrick Lamar",
+                "Rapsody"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d00004851cdb645498cd3d8a2db4d05e1"
+        },
+        {
+            "name": "BOOGIE",
+            "album": "SATURATION III",
+            "artists": [
+                "BROCKHAMPTON"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d00004851ef51817e6a6563b6f7ce5872"
+        }
+    ],
+    [
+        {
+            "name": "High Beams",
+            "album": "Hi This Is Flume (Mixtape)",
+            "artists": [
+                "Flume",
+                "HWLS",
+                "slowthai"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d0000485159aaefba0f8d74f0054ff1a3"
+        },
+        {
+            "name": "Sinopsis",
+            "album": "Sinopsis",
+            "artists": [
+                "Arthur Liory"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d0000485131a77920689c07d7fb068338"
+        },
+        {
+            "name": "The Glow, Pt. 2",
+            "album": "The Glow, Pt. 2",
+            "artists": [
+                "The Microphones"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d0000485100c91ccec6800014b8513717"
+        }
+    ],
+    [
+        {
+            "name": "Backseat Freestyle",
+            "album": "good kid, m.A.A.d city (Deluxe)",
+            "artists": [
+                "Kendrick Lamar"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d0000485178de8b28de36a74afc0348b5"
+        },
+        {
+            "name": "Close To You",
+            "album": "Blonde",
+            "artists": [
+                "Frank Ocean"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526"
+        },
+        {
+            "name": "Snaggle Tooth",
+            "album": "Mixtape",
+            "artists": [
+                "Bobbing"
+            ],
+            "cover": "https://i.scdn.co/image/ab67616d00004851cdbeced3ea25b29f520ac031"
+        }
+    ]
+]

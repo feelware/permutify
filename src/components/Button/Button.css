@@ -1,0 +1,29 @@
+.button {
+  padding: 18px 18px;
+  align-content: center;
+  border-radius: 32px;
+  background: #3CD772;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgb(103, 231, 147);
+}
+
+.button.pressed {
+  background: #1db753 !important;
+}
+
+.button.wide {
+  padding: 18px 62px;
+}
+
+.label {
+  font-family: Montserrat;
+  font-size: rem;
+  font-weight: 600;
+  margin: 0px;
+}

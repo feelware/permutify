@@ -1,0 +1,34 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    gap: 130px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.logo {
+    background: linear-gradient(90deg, #00a2ff 0%, #20e9cb 41.18%, #07ff5e 100.07%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.user-prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cassete {
+    margin-top: -70px;
+}
