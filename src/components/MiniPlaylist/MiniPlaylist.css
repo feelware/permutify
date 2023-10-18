@@ -1,0 +1,20 @@
+.mini-playlist {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px 25px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.mini-playlist-songs {
+    display: flex;
+    gap: 15px;
+}
+
+.mini-playlist-title {
+    width: auto;
+    color: white;
+    margin: 0;
+}

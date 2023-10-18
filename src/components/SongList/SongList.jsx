@@ -1,8 +1,6 @@
 import './SongList.css'
 import Song from '../Song/Song'
 
-// SongList should re-render every time the songs array changes
-
 function SongList({ songs }) {
   return (
     <div className="song-list">

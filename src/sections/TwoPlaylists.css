@@ -1,0 +1,19 @@
+.two-playlists {
+    margin-left: 40px;
+}
+
+.two-playlists-frame-1, .two-playlists-frame-2, .two-playlists-frame-3 {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.six-permutations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.two-playlists-for-real {
+    display: flex;
+    gap: 1rem;
+}

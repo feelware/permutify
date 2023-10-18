@@ -1,4 +1,4 @@
-import Button from "../components/Button/Button";
+import Button from "./components/Button/Button";
 import "./Home.css";
 
 export default function Home( {auth} ) {

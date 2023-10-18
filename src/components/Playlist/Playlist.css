@@ -3,10 +3,21 @@
     flex-direction: column;
 }
 
+.playlist-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist-heading {
+    color: white;
+}
+
 .playlist-content {
-    border-radius: 15px 15px 0px 0px;
-    background: linear-gradient(180deg, #000 0%, #002D85 100%);
-    padding: 40px 35px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .playlist-footer {
@@ -30,4 +41,10 @@
     margin: 0;
     font-size: 0.9rem;
     color: white;
+}
+
+.playlist-cursor {
+    position: absolute;
+    left: 98%;
+    top: 25px
 }

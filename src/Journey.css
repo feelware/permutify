@@ -1,0 +1,12 @@
+.journey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px 100px;
+}
+
+.slide-counter {
+    position: absolute;
+    bottom: 6%
+}

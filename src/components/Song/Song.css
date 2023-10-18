@@ -1,4 +1,4 @@
-.song__container {
+.song-container {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -6,35 +6,41 @@
     align-self: stretch;
 }
 
-.song__cover {
-    width: 70px;
-    height: auto;
+.song-cover {
+    width: 64px;
+    height: 64px;
 }
 
-.song__info {
+.song-metadata {
     display: flex;
+    gap: 0.3rem;    
     flex-direction: column;
-    justify-content: center;
-    gap: 2px;
     font-family: Sunflower, sans-serif;
 }
 
-.song__album {
+.song-info {
     margin: 0;
+    line-height: 0.85rem;
+    font-size: 0.95rem;
+    text-align: left;
     color: white;
-    font-size: 10px;
+    text-wrap: nowrap;
+}
+
+.song-album {
+    font-size: 0.65rem;
+    color: #d7d7d7;
     text-transform: uppercase;
 }
 
-.song__name {
-    margin: 0;
-    color: white;
-    font-size: 16px;
+.song-name {
+    text-align: left;
     font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.song__artists{
-    margin: 0;
-    color: #B0B0B0;
-    font-size: 14px;
+.song-artists{
+    font-size: 0.7rem;
+    color: #ffffff;
 }
