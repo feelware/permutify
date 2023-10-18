@@ -1,6 +1,4 @@
-.two-playlists {
-    margin-left: 40px;
-}
+
 
 .two-playlists-frame-1, .two-playlists-frame-2, .two-playlists-frame-3 {
     display: flex;
@@ -9,7 +7,7 @@
 
 .six-permutations {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 

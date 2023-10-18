@@ -18,6 +18,12 @@
     font-family: Sunflower, sans-serif;
 }
 
+.selected {
+    background-color: #d7d7d722;
+    padding: 3.5%;
+    border-radius: 5%
+}
+
 .song-info {
     margin: 0;
     line-height: 0.85rem;

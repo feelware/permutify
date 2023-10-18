@@ -17,8 +17,6 @@ export default function TwoPlaylists( {songs, slide} ) {
             {
                 slide == 4 &&
                 <motion.section className="two-playlists-frame-1"
-                    initial={{ y: "-500px", opacity: 0}}
-                    animate={{ y: 0, opacity: 1}}
                     exit={{ y: "500px", opacity: 0}}
                 >
                     <Playlist title="Playlist 1" color="250" width="400px" desc="Una sola canción" songs={[songs[0]]}></Playlist>

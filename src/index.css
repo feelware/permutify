@@ -48,6 +48,12 @@ p strong {
   font-weight: 600;
 }
 
+.black {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -0.25rem;
+}
+
 .caption {
   color: #5B5B5B;
   font-family: Sunflower;

@@ -1,7 +1,7 @@
 import SongList from "../SongList/SongList";
 import './Playlist.css'
 
-export default function Playlist({ songs, width = "450", title = "Playlist", desc, shuffle, cursor, color=0 }) {
+export default function Playlist({ songs, selected, width = "450", title = "Playlist", desc, shuffle, cursor, color=0 }) {
   const contentStyle = {
     borderRadius: desc ? "15px 15px 0px 0px" : "15px",
     background: `linear-gradient(180deg, #000000 0%, hsl(${color}, 100%, 20%) 100%)`,
@@ -19,7 +19,7 @@ export default function Playlist({ songs, width = "450", title = "Playlist", des
               {cursor && <img className="playlist-cursor" src={cursor} alt="retro mouse cursor" />}
           </div>
         }        
-        <SongList songs={songs} />
+        <SongList songs={songs} selected={selected} />
       </section>
       {desc && (
         <section className="playlist-footer">

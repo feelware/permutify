@@ -8,7 +8,6 @@ import TextBlock from "../components/TextBlock/TextBlock";
 export default function Trees ( {songs, slide} ) {
     const [firstRow, animateFirstRow] = useAnimate();
 
-
     useEffect(() => {   
         if (slide == 8) {
             animateFirstRow(firstRow.current, { gap: ["50px;", "300px"]}, { duration: 1.5, ease: "easeInOut" });

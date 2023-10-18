@@ -7,7 +7,7 @@ import "./Possibles.css";
 
 const marqueeVariants = {
   animate: {
-    y: ["-10800px", "600px"],
+    y: ["-10000px", "600px"],
     transition: {
       y: {
         duration: "3.5",
@@ -25,15 +25,16 @@ function Possibles ( {songsArray} ) {
         variants={marqueeVariants}
         animate="animate"
     >   
-        <div className="marquee-content">
-            <TextBlock title="¿De cuántas formas puedo ordenar mi playlist?"> Esta pregunta es importante, pues de esto dependerá cuánto tiempo te tome encontrar el orden perfecto entre todos aquellos posibles. A estos posibles ordenamientos los llamamos <strong>permutaciones</strong>. El número de permutaciones que puedes obtener de una sola combinación crece más y más rápido con cada nuevo elemento a tomar en cuenta. </TextBlock>
-            <div className="carousel-songs">
-                {songsArray.map((songs, i) => (
-                    <Playlist key={i} songs={songs} width="400px" color={250 + i*15} title={"Playlist " + (i + 1)} />
+
+      <div className="marquee-content">
+          <div className="carousel-songs">
+              {songsArray.map((songs, i) => (
+                <Playlist key={i} songs={songs} width="400px" color={250 + i*15} title={"Playlist " + (i + 1)} />
                 ))}
-            </div>
-            <p className="caption marquee-caption">¿Cómo llegamos a este número?</p>
-        </div>
+          </div>
+          <TextBlock className="marquee-desc" maxWidth="600" title="¿De cuántas formas puedo ordenar mi playlist?"> Esta pregunta es importante, pues de esto dependerá cuánto tiempo te tome encontrar el orden perfecto entre todos aquellos posibles. A estos posibles ordenamientos los llamamos <strong>permutaciones</strong>. El número de permutaciones que puedes obtener de una sola combinación crece más y más rápido con cada nuevo elemento a tomar en cuenta. </TextBlock>
+      </div>
+
     </motion.div>
     </div>
   );
