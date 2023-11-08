@@ -1,4 +1,5 @@
 export default function getPermutations(arr) {
+    console.log(arr)
     if (arr.length === 1) {
       return [arr];
     }

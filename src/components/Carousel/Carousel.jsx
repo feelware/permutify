@@ -5,7 +5,7 @@ import Playlist from '../Playlist/Playlist'
 import './Carousel.css'
 
 const EmblaCarousel = ({songs}) => {
-  const [emblaRef] = useEmblaCarousel({ duration: 80 }, [Autoplay( { delay: 3000 } )])
+  const [emblaRef] = useEmblaCarousel({ duration: 40 }, [Autoplay( { delay: 2400 } )])
 
   return (
     <div className="embla">

@@ -2,7 +2,6 @@ import spotify from '../../assets/spotify.svg';
 import './Song.css';
 
 const Song = ({ name, artists, album, cover, url, selected=false }) => {
-  // const songMetadataClassName = `song-metadata ${selected ? 'selected' : ''}`;
   const songContainerClassName = `song-container ${selected ? 'selected' : 'unselected'}`;
 
   return (

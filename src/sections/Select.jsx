@@ -28,7 +28,6 @@ export default function Select( { songs } ) {
                 }
                 return newIndex;
             });
-            console.log("newSelected: ", newSelected)
         }, 1500);
       
         return () => clearInterval(intervalId);

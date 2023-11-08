@@ -9,6 +9,11 @@
     justify-content: space-between;
 }
 
+.playlist-shuffle-icon {
+    position: relative;
+    right: -15px;
+}
+
 .playlist-heading {
     color: white;
 }
@@ -46,6 +51,6 @@
 
 .playlist-cursor {
     position: absolute;
-    left: 98%;
-    top: 25px;
+    left: 102%;
+    top: 35px;
 }

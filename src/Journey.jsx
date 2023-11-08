@@ -12,6 +12,9 @@ import Select from "./sections/Select";
 import Npr from "./sections/Npr";
 import ActualNpr from "./sections/ActualNpr";
 import ActualNpr2 from "./sections/ActualNpr2";
+import Combi2 from "./sections/Combi2";
+import Combi3 from "./sections/Combi3";
+import ActualNcr from "./sections/ActualNcr";
 
 import './Journey.css';
 import Felicidades from "./sections/Felicidades";
@@ -19,10 +22,8 @@ import PlaylistCarousel from "./sections/PlaylistCarousel";
 
 export default function Journey( {params} ) {
     const [mainPlaylist, setMainPlaylist] = useState(null);
-    // const [mP1, setMP1] = useState(null); // mP = mini playlist
-    const [mP2, setMP2] = useState(null);
-    // const [mP3, setMP3] = useState(null);
-    // const [mP4, setMP4] = useState(null);
+    const [mP1, setMP1] = useState(null); // mP = mini playlist
+    const [mPs, setMPs] = useState(null);
     const [slide, setSlide] = useState(0);
 
     const SLIDES = 27;
@@ -31,16 +32,16 @@ export default function Journey( {params} ) {
         (async function fetchSongs() {
             const topSongs = await getSongsArrays(params.access_token);
             setMainPlaylist(getPermutations(topSongs[0]));
-            // setMP1(topSongs[1]);
-            setMP2(topSongs[2]);
-            // setMP3(topSongs[3]);
-            // setMP4(topSongs[4]);
+            setMP1(topSongs[1]);    
+            // set mPs to an array of arrays, from 2 to the end of topSongs
+            setMPs(topSongs.slice(2));
+            console.log(mPs)
         })();
 
         const handleKeyPress = (event) => {
-            if (event.key === 'd') {
+            if (event.key === 'd' || event.key === 'D') {
                 addSlide();
-            } else if (event.key === 'a') {
+            } else if (event.key === 'a' || event.key === 'A') {
                 subtractSlide();
             }
         };
@@ -96,7 +97,7 @@ export default function Journey( {params} ) {
                     {
                         slide >= 4 && slide <= 6 &&
                         <motion.div initial={{ y: "-1000px" }} animate={{ y: 0 }} exit={{ y: "1600px" }} >
-                            <TwoPlaylists songs={mP2} slide={slide} />
+                            <TwoPlaylists songs={mP1} slide={slide} />
                         </motion.div>
                     }
                 </AnimatePresence>
@@ -104,7 +105,7 @@ export default function Journey( {params} ) {
                     {
                         slide >= 7 && slide <= 9 &&
                         <motion.div initial={{ x: "1600px" }} animate={{ x: 0 }} exit={{ x: "-1600px" }} >
-                            <Trees songs={mP2} slide={slide} />
+                            <Trees songs={mP1} slide={slide} />
                         </motion.div>
                     }
                 </AnimatePresence>
@@ -158,23 +159,37 @@ export default function Journey( {params} ) {
                 </AnimatePresence>
                 <AnimatePresence mode="popLayout">
                 {
-                    slide == 22 &&
+                    slide >= 22 && slide <= 23 &&
+                    <motion.div initial={{ y: "1080px" }} animate={{ y: 0 }} exit={{ y: "-1080px" }} >
+                        <Combi2 mPs={mPs} slide={slide} />
+                    </motion.div>
+                }
+                </AnimatePresence>
+                <AnimatePresence mode="popLayout">
+                {
+                    slide == 24 &&
+                    <motion.div initial={{ y: "1080px" }} animate={{ y: 0 }} exit={{ y: "-1080px" }} >
+                        <Combi3 mPs={mPs} slide={slide} />
+                    </motion.div>
+                }
+                </AnimatePresence>
+                <AnimatePresence mode="popLayout">
+                {
+                    slide == 25 &&
+                    <motion.div initial={{ y: "1080px" }} animate={{ y: 0 }} exit={{ y: "-1080px" }} >
+                        <ActualNcr />
+                    </motion.div>
+                }
+                </AnimatePresence>
+                <AnimatePresence mode="popLayout">
+                {
+                    slide == 26 &&
                     <motion.div initial={{ y: "1080px" }} animate={{ y: 0 }} exit={{ y: "-1080px" }} >
                         <Felicidades />
                     </motion.div>
                 }
                 </AnimatePresence>
-{/*
-                {slide >= 22 && slide <= 24 && (
-                    <Combi songs={[mP1, mP2, mP3, mP4]} slide={slide} />
-                )}
-                {slide === 25 && (
-                    <Ncr slide={slide} />
-                )}
-                {slide === 26 (
-                    <End slide={slide} />
-                )} 
-                */}
+
             </MotionConfig>
             {/* <p >{slide + 1} / {SLIDES}</p> */}
         </main>
