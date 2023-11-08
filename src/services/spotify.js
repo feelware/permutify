@@ -21,6 +21,7 @@ function tidyUpSongs(songs) {
         album: song.album.name,
         artists: song.artists.map((artist) => artist.name),
         cover: song.album.images.find((image) => image.width === 64)?.url,
+        url: song.external_urls.spotify,
     }));
 }
 

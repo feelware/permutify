@@ -4,6 +4,8 @@
     gap: 14px;
     width: 100%;
     align-self: stretch;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .song-cover {
@@ -16,12 +18,19 @@
     gap: 0.3rem;    
     flex-direction: column;
     font-family: Sunflower, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;    
 }
 
 .selected {
     background-color: #d7d7d722;
     padding: 3.5%;
-    border-radius: 5%
+    border-radius: 5px;
+}
+
+.unselected {
+    background-color: transparent;
+    padding: 3.5%;
 }
 
 .song-info {
@@ -31,12 +40,16 @@
     text-align: left;
     color: white;
     text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .song-album {
     font-size: 0.65rem;
     color: #d7d7d7;
     text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .song-name {

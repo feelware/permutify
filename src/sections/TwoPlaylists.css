@@ -1,8 +1,7 @@
-
-
 .two-playlists-frame-1, .two-playlists-frame-2, .two-playlists-frame-3 {
     display: flex;
     gap: 2.5rem;
+    padding: 100px;
 }
 
 .six-permutations {

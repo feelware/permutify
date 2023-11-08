@@ -8,11 +8,12 @@ function SongList({ songs, selected }) {
     <div className="song-list">
       {songs.map((song, index) => (
         <Song
-          key={song.name}
+          key={index}
           name={song.name}
           artists={song.artists}
           album={song.album}
           cover={song.cover}
+          url={song.url}
           selected={isSelectedArray ? selected[index] : false}
         />
       ))}

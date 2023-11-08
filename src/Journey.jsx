@@ -4,7 +4,6 @@ import getSongsArrays from "./services/spotify";
 import getPermutations from "./services/math";
 
 import Shuffle from "./sections/Shuffle";
-import Possibles from "./sections/Possibles";
 import TwoPlaylists from "./sections/TwoPlaylists";
 import Trees from "./sections/Trees";
 import Multi from "./sections/Multi";
@@ -16,6 +15,7 @@ import ActualNpr2 from "./sections/ActualNpr2";
 
 import './Journey.css';
 import Felicidades from "./sections/Felicidades";
+import PlaylistCarousel from "./sections/PlaylistCarousel";
 
 export default function Journey( {params} ) {
     const [mainPlaylist, setMainPlaylist] = useState(null);
@@ -71,18 +71,26 @@ export default function Journey( {params} ) {
                 <AnimatePresence mode="popLayout">
                     {
                         slide >= 0 && slide <=2 &&
-                        <motion.div initial={{ y: "900px" }} animate={{ y: 0 }} exit={{ x: "-1600px" }} >
+                        <motion.div initial={{ y: "900px" }} animate={{ y: 0 }} exit={{ y: "1600px" }} >
                             <Shuffle songsArray={mainPlaylist} slide={slide} />
                         </motion.div>
                     }
                 </AnimatePresence>
-                <AnimatePresence mode="popLayout">
+                {/* <AnimatePresence mode="popLayout">
                     {
                         slide == 3 &&
                         <motion.div initial={{ x: "1600px" }} animate={{ x: 0 }} exit={{ y: "1000px" }} >
                             <Possibles songsArray={mainPlaylist} slide={slide} />
                         </motion.div>
                     }
+                </AnimatePresence> */}
+                <AnimatePresence mode="popLayout">
+                {
+                    slide == 3 &&
+                    <motion.div initial={{ y: "-1080px" }} animate={{ y: 0 }} exit={{ y: "1080px" }} >
+                        <PlaylistCarousel songsArray={mainPlaylist} />
+                    </motion.div>
+                }
                 </AnimatePresence>
                 <AnimatePresence mode="popLayout">
                     {

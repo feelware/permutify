@@ -1,7 +1,7 @@
 import SongList from "../SongList/SongList";
 import './Playlist.css'
 
-export default function Playlist({ songs, selected, width = "450", title = "Playlist", desc, shuffle, cursor, color=0 }) {
+export default function Playlist({ songs, selected, width = "450px", title = "Playlist", desc, shuffle, cursor, color=0 }) {
   const contentStyle = {
     borderRadius: desc ? "15px 15px 0px 0px" : "15px",
     background: `linear-gradient(180deg, #000000 0%, hsl(${color}, 100%, 20%) 100%)`,

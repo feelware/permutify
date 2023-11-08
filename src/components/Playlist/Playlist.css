@@ -14,10 +14,11 @@
 }
 
 .playlist-content {
-    padding: 50px;
+    padding: 50px 75px 50px 50px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    text-overflow: ellipsis;
 }
 
 .playlist-footer {
@@ -46,5 +47,5 @@
 .playlist-cursor {
     position: absolute;
     left: 98%;
-    top: 25px
+    top: 25px;
 }

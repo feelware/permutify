@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.3",
+    "embla-carousel": "^8.0.0-rc14",
+    "embla-carousel-autoplay": "^8.0.0-rc14",
+    "embla-carousel-react": "^8.0.0-rc14",
     "express": "^4.18.2",
     "framer-motion": "^10.16.4",
     "query-string": "^8.1.0",
